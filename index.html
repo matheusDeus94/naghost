@@ -1,0 +1,107 @@
+<!--    ----------------------  -->
+<!--    ---- Resumo V2.0 ----   -->
+<!--    ----------------------  -->
+
+<!--    ------------------------------------------------------  -->
+<!--    - Alterações no CSS para deixar o site mais responsivo    -->
+<!--    - Testar se fica melhor a imagem de fundo não mexer com a disposição horizontal da tela, e sim da vertical  -->
+<!--    - Foi adicionado uma div rollable-page que permite a rolagem da div que contém o menu e as informações principais da página, mantendo o background intocado. -->
+<!--    - Em Sobre a Banda, alterar o script que permite a mudança de imagens. Colocar 2 imagens no mesmo conteiner que trocam sozinhas, permitindo que o texto acima e as imagens ambos fiquem na tela. -->
+
+<!--    ------------------------------------------------------  -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naghost - Site Oficial V 2.0</title>
+    <link rel="icon" type="image/x-icon" href="./media/heavy-metal-icon.svg">
+    <link rel="stylesheet" href="./style.css">
+<!--    <script src="./index.js" defer></script> -->
+</head>
+
+<body>
+
+    <main class="background">
+        <img class="background-image" src="./media/background_img.jpg" alt="background_image">
+
+        <header class="foreground">
+            <div>
+                <ul class="header-text">
+                    <li>
+                        <a href="https://www.facebook.com/naghostband/" target="_blank">
+                            <img class="media-image" src="./media/facebook_icon.svg" alt="Facebook_icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCDc-fzzxUHTeV8dtao3_Z7A" target="_blank">
+                        <img class="media-image" src="./media/youtube_icon.svg" alt="YouTube_Icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/naghostband/" target="_blank">
+                            <img class="media-image" src="./media/instagram_icon.svg" alt="Instagram_icon">
+                        </a>
+                    </li>
+                </ul>
+                <a href="./">
+                    <img class="header-logo" src="./media/logo.png" alt="Logo-Naghost.png">
+                </a>
+            </div>
+        </header>
+
+        <div class="rollable_page">
+            <div>
+                <nav class="navigation-bar">
+                    <ul class="navigation-bar-list">
+                        <li class="navigation-item">
+                            <a class="highlight" href="./">
+                                Página principal
+                            </a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="./about">
+                                Sobre a banda
+                            </a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="./videos">
+                                Vídeos
+                            </a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="./gallery">
+                                Galeria
+                            </a>
+                        </li>
+                        <li class="navigation-item">
+                            <a href="./contact">
+                                Contato
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        <!--        <img class="navigation-bar-image" src="./media/bar.jpg" alt="navigation_bar"> -->
+            </div>
+
+            <section>
+                <div>
+                    <ul class="main-page-list">
+                        <li>
+                            <p class="main-page-text">Lançamento do nosso primeiro EP!</p>
+                            <p class="main-page-text">→</p>
+                        </li>
+                        <li>
+                            <img class="cover-art" src="./media/cover_art.webp" alt="Ep_art_cover">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+</body>
+</html>
