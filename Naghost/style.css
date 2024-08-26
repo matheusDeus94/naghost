@@ -70,7 +70,6 @@ li {
 
 .header-text {
     list-style-type: none;
-    margin-right: 3000px;
     position: absolute;
     display: flex;
     min-width: 1rem;
