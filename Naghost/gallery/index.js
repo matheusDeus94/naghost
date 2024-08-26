@@ -31,14 +31,14 @@ function removeFade() {
 
 nextButton.addEventListener('click', function(ev){
     nextPic();
-    image.src="../media/gallery/image-" + actualPic + ".webp";
+    image.src="../media/gallery/image-" + actualPic + ".jpg";
     image.classList.add('fade');
     setTimeout(removeFade,500);
 });
 
 backButton.addEventListener('click', function(ev){
     backPic();
-    image.src="../media/gallery/image-" + actualPic + ".webp";
+    image.src="../media/gallery/image-" + actualPic + ".jpg";
     image.classList.add('fade');
     setTimeout(removeFade,500);
 });
