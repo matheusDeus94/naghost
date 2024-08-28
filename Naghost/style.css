@@ -78,8 +78,8 @@ li {
 }
 
 .navigation-bar {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 
 .navigation-bar-image{
@@ -104,6 +104,7 @@ li {
 
 .navigation-item {
     width: 30vw;
+    font-size: 1rem;
 }
 
 .gallery-section, .videos-section {
@@ -307,7 +308,7 @@ li {
     padding-left: 10vw;
     margin-top: 10vh;
     color: var(--font-color);
-    font-size: 2rem;
+    font-size: 2vw;
     text-shadow:.5px .5px var(--shadow-color),
     .5px -.5px var(--shadow-color),
     -.5px .5px var(--shadow-color),
