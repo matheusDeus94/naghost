@@ -18,13 +18,13 @@ function removeFade() {
 function slideShow() {
     if(currentSlide == lastSlide) {
         currentSlide = 1;
-        slideShowVar[0].src = './images/image-' + currentSlide + '.jpg';
+        slideShowVar[0].src = '../about/images/image-' + currentSlide + '.jpg';
         slideShowVar[0].classList.add('fade');
         setTimeout(removeFade,500);
         setTimeout(slideShow,1500)
     } else {
         currentSlide++;
-        slideShowVar[0].src = './images/image-' + currentSlide + '.jpg';
+        slideShowVar[0].src = '../about/images/image-' + currentSlide + '.jpg';
         slideShowVar[0].classList.add('fade');
         setTimeout(removeFade,500);
         setTimeout(slideShow, 1500);
