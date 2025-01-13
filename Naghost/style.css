@@ -3,6 +3,7 @@
     --font-color: #f1f1f1;
     --shadow-color: #6ec6e0;
     --transparent-color: #0009;
+    --reverse-transp-color: #ddd9;
     --highlight-color: #92863f;
 }
 
@@ -24,8 +25,8 @@ header {
 }
 
 li {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 .background {
@@ -38,28 +39,30 @@ li {
 
 .foreground {
     position: relative;
+    max-height: 30vh;
 }
 
 .rollable_page {
     position: absolute;
     overflow-y: scroll;
     overflow-x: scroll;
-    height: 75vh;
-    width: 100vw;
+    height: 95vh;
+    width: 95vw;
+    margin-left: 2.5vw;
 
 }
 
 .background-image {
     position: absolute;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
     top: 0;
     z-index: -99;
 }
 
 .header-logo {
-    margin-right: 15vh;
-    margin-left: 15vh;
+    margin-right: 30vw;
+    margin-left: 30vw;
     display: inline;
     width: 30vh;
 }
@@ -69,21 +72,38 @@ li {
 }
 
 .header-text {
+    background-color: var(--reverse-transp-color);
+    border-radius: .5rem;
     list-style-type: none;
     position: absolute;
     display: flex;
     min-width: 1rem;
     margin-top: 3rem;
-    padding-top: 1rem;
+    padding-top: .8rem;
+    padding-bottom: .2rem;
+    margin-left: .6rem;
+    padding-left: .5rem;
+    margin-right: .6rem;
+    padding-right: .5rem;
 }
 
 .navigation-bar {
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+/*(    background-color: var(--transparent-color); */
 }
 
+.navigation-bar-bg-color {
+    position: relative;
+    background-color: var(--transparent-color);
+    border-radius: 9px;
+    margin-bottom: 1rem;
+}
+
+/*
 .navigation-bar-image{
 }
+*/
 
 .navigation-bar-list{
     list-style-type: none;
@@ -103,6 +123,12 @@ li {
 }
 
 .navigation-item {
+    border-style: groove;
+    border-color: var(--transparent-color);
+    background-color: var(--transparent-color);
+    border-radius: 9px;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
     width: 30vw;
     font-size: 1rem;
 }
@@ -127,24 +153,28 @@ li {
 .image-gallery {
     border: solid 1px var(--shadow-color);
     border-radius: 5px;
-    max-height: 90vh;
-    max-width: fit-content;
+    max-height: 70vh;
+    max-width: 70vw;
 }
 
 .gallery-unnordered-list {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     list-style-type: none;
     justify-content: center;
-    margin-right: 40px;
+}
+
+.gallery-unnordered-list {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 .change-button-gallery {
-    margin-left: 7vw;
     border: solid .1px var(--font-color);
     border-radius: 20px;
-    font-size: 5vw;
+    font-size: 7vw;
     background-color: var(--transparent-color);
     color: var(--shadow-color);
 }
@@ -194,18 +224,16 @@ li {
 }
 
 .image_sub{
-    font-size: 1vw;
+    background-color: var(--transparent-color);
+    font-size: 2.5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
     font-style: italic;
     filter: brightness(.7);
 }
 
-.image-gallery{
-    width: 85vw;
-    margin-left: 7vw;
-}
-
 .band-image-about{
-    width: 80vw;
+    height: 50vh;
 }
 
 .about-text-div, .about-art-div-position {
@@ -225,7 +253,8 @@ li {
     background-color: var(--transparent-color);
     text-align: justify;
     overflow: scroll;
-    height: 25vh;
+    height: 50vh;
+    white-space: pre-wrap;
 }
 
 .button-next-text {
@@ -283,14 +312,13 @@ li {
 }  
 
 .about-art-div-container{
-    margin-left: 5vw;
+    margin-left: 0;
     border: solid .1px var(--transparent-color);
     border-radius: 3px;
     background-color: var(--transparent-color);
     text-align: center;
     justify-content: center;
     height: 35vw;
-    width: 70vw;
 }
 
 .image-art-slide-show{
@@ -302,6 +330,8 @@ li {
 }
 
 .contact-section {
+    background-color: var(--transparent-color);
+    border-radius: .5rem;
     margin-right: 10vw;
     margin-left: 10vw;
     padding-right: 10vw;
@@ -316,14 +346,19 @@ li {
 
 }
 
+.image-gallery-li {
+    position: relative;
+    display: block;
+}
+
 #back-button-gallery {
     position: absolute;
     display: inline-block;
-    margin-right: 90vw ;
+    margin-right: 77vw;
 }
 
 #next-button-gallery {
     position: absolute;
     display: inline-block;
-    margin-left: 90vw ;
+    margin-left: 77vw ;
 }
