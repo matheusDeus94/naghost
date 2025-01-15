@@ -1,4 +1,4 @@
-let numberOfTexts = 6;
+let numberOfTexts = 3;
 let actualText = 1;
 
 let currentSlide = 1;
@@ -52,7 +52,9 @@ slideShow();
 textNextButtonAbout.addEventListener('click', function(ev) {
     document.getElementById('about-text-paragraph-' + actualText).style.display = 'none';
     document.getElementById('dot-' + actualText).classList.remove('active');
+    document.getElementById('about-text-div-paragraphs').scrollTo({top:0, behavior:'smooth'});
     nextText();
+    document.getElementById('about-text-div-paragraphs').scrollTo({top:0, behavior:'smooth'});
     document.getElementById('about-text-paragraph-' + actualText).style.display = 'block';
     document.getElementById('dot-' + actualText).classList.add('active');
 });
@@ -60,7 +62,9 @@ textNextButtonAbout.addEventListener('click', function(ev) {
 textPreviousButtonAbout.addEventListener('click', function(ev) {
     document.getElementById('about-text-paragraph-' + actualText).style.display = 'none';
     document.getElementById('dot-' + actualText).classList.remove('active');
+    document.getElementById('about-text-div-paragraphs').scrollTo({top:0, behavior:'smooth'});
     previousText();
+    document.getElementById('about-text-div-paragraphs').scrollTo({top:0, behavior:'smooth'});
     document.getElementById('about-text-paragraph-' + actualText).style.display = 'block';
     document.getElementById('dot-' + actualText).classList.add('active');
 });

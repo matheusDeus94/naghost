@@ -16,12 +16,18 @@
 <!--    ------------------------------------------------------  -->
 
 <!--    ------------------------------------------------------  -->
-<!--    - Correções de Bugs -->
+<!--    - Correções de Bugs - CORRIGIDOS --> 
 <!--    - Ajustar o tamanho da fonte dos textos para %vh -->
 <!--    - Ajustar a largura do header para que não tenha espaço sobrando na direita da página -->
 <!--    - Ajustar a largura da página de vídeos -->    
+<!--    - Ajuste na cor e posição das redes sociais em header-text -->    
 <!--    ------------------------------------------------------  -->
 
+<!--    ------------------------------------------------------  -->
+<!--    - Correções de Bugs --> 
+<!--    - Botão que troca texto na página principal está bugado em mobile. Ajustar tamanhos para melhor responsividade. -->    
+<!--    - Correção de bug no script dos botões. Agora nem todo texto volta para o início, somente alguns, investigar. --> 
+<!--    ------------------------------------------------------  -->
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -105,7 +111,7 @@
                     <p class="image_sub">Da esquerda para a direita: Júlio Cezar, Jefferson Renato, Caco Andrade, Cayo Albuquerque e André Mendes.</p>
 
                     <div class="about-text-div about-text-div-position">
-                        <div class="about-text-div-paragraphs">
+                        <div id="about-text-div-paragraphs" class="about-text-div-paragraphs">
                             <p class="about-text-paragraph" id="about-text-paragraph-1">&emsp;NAGHOST é uma banda de heavy metal que foi fundada no segundo semestre de 2020 por André Mendes, guitarrista, vocalista, produtor e compositor. André Mendes é músico ativo em Curitiba desde 2002, tendo passagens pelas bandas Moonshine, Dragonheart e Silvermoon, Dry Clamour, A Tribute to the Plague e Evilution. A frente da banda Dragonheart atuou entre 2002 até 2019 e lançou os álbuns Vengeance in black (2005), When the dragons are kings (2007) e The Battle Sanctuary (2015), assinando também como produtor musical do álbum. Juntou-se a Júlio Siqueira (baixista), Jefferson Moraes (guitarrista), Caco Andrade (vocalista) e Cayo Albuquerque (baterista) para poder concretizar a produção do primeiro álbum da banda.
                                 &emsp;André, Júlio e Jefferson são também profissionais da educação e foram os primeiros a serem chamados para o projeto. Atuando na educação e respeitando as leis 10.639/03 e sua alteração, a lei 11645/08, que propuseram diretrizes para a abordagem do estudo da história e cultura afro-brasileira e africana, os três professores sempre relataram a dificuldade de romper o senso comum que aborda as tradições afro-brasileiras de forma negativa. Também observaram a existência de poucos materiais, bens culturais, literários, musicais, que tratassem as religiões brasileiras de matriz africana, abandonando a perspectiva de exotismo que normalmente acompanha.</p>
                             <p class="about-text-paragraph" id="about-text-paragraph-2" hidden>&emsp;Em 2021 o experiente vocalista curitibano, Caco Andrade, ingressou na banda após as tratativas com André, com quem atua desde 2010 à frente da banda Silvermoon. O interesse de Caco em participar da Naghost se deve sobretudo ao seu vínculo com religiões brasileiras de matriz africana. Em 2022 foi o momento de ingresso de Cayo Albuquerque, baterista que absorveu o conceito por trás do projeto e agregou muita informação musical de ritmos brasileiros.
@@ -119,13 +125,13 @@
                             <span class="dot" id="dot-3"></span>
                         </div>
                         <div class="about-text-div-buttons">
-                            <button class="button-next-text" type="button" id="about-previous-button">←</button>
-                            <button class="button-next-text" type="button" id="about-next-button">→</button>
+                            <button class="button-next-text margin-onev" type="button" id="about-previous-button">&larr;</button>
+                            <button class="button-next-text margin-onev" type="button" id="about-next-button">&rarr;</button>
                         </div>
                     </div>
 
                     <div class="about-art-div about-art-div-position">
-                        <div class="about-art-div-container">
+                        <div class="about-art-div-container margin-onev">
                             <img class="image-art-slide-show" src="./images/image-1.jpg" alt="Naghost-Arts">
                         </div>
                     </div>

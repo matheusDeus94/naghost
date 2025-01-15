@@ -1,9 +1,10 @@
 :root{
     --bg-color: #1f1f1f;
     --font-color: #f1f1f1;
+    --reverse-font-color: #131313;
     --shadow-color: #6ec6e0;
     --transparent-color: #0009;
-    --reverse-transp-color: #ddd9;
+    --reverse-transp-color: #dfdfdf33;
     --highlight-color: #92863f;
 }
 
@@ -71,7 +72,9 @@ li {
 }
 
 .media-image {
-    width: 30px;
+    width: 2vh;
+    margin: 0;
+    padding: 0;
 }
 
 .header-text {
@@ -83,7 +86,7 @@ li {
     list-style-type: none;
     position: absolute;
     display: flex;
-    margin-top: 7.5vh;
+    margin-top: 2vh;
     margin-left: 2vw;/*
     margin-top: 3rem;
     padding-top: .8rem;
@@ -283,14 +286,29 @@ li {
     text-align: justify;
     overflow: scroll;
     height: 35vh;
+    margin-bottom: .5vh;
+    padding-bottom: 2.5vh;
 }
 
 .button-next-text {
     border: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
     border-radius: 5px;
-    color: var(--font-color);
-    background-color: var(--bg-color);
-    font-size: 3rem;
+    color: var(--reverse-font-color);
+    background-color: var(--reverse-transp-color);
+    font-size: 3.5vh;
+}
+
+.margin-onev{
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .button-next-text:hover {
